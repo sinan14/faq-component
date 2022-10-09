@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="faq.css" />
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="col-left">
+        <img
+          class="illustration__mobile"
+          src="assets/illustration-woman-online-mobile.svg"
+          alt="illustration-box-desktop"
+        />
+        <img
+          class="illustration__box-desktop"
+          src="assets/illustration-box-desktop.svg"
+          alt="illustration-box-desktop"
+        />
+      </div>
+      <div class="col-right">
+        <h1 class="heading__primary">FAQ</h1>
+
+        <ul class="faq__list">
+          <li>
+            <p class="faq__qns">How many team members can I invite?</p>
+            <b class="up-arrow"
+              ><img src="assets/icon-arrow-down.svg" alt=""
+            /></b>
+
+            <p class="faq__ans hide">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+            <p class="faq__hr-line"></p>
+          </li>
+
+          <li>
+            <p class="faq__qns">What is the maximum file upload size?</p>
+            <b class="up-arrow"
+              ><img src="assets/icon-arrow-down.svg" alt=""
+            /></b>
+            <p class="faq__ans hide">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+            <p class="faq__hr-line"></p>
+          </li>
+
+          <li>
+            <p class="faq__qns">How do I reset my password?</p>
+            <b class="up-arrow"
+              ><img src="assets/icon-arrow-down.svg" alt=""
+            /></b>
+            <p class="faq__ans hide">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+            <p class="faq__hr-line"></p>
+          </li>
+
+          <li>
+            <p class="faq__qns">Can I cancel my subscription?</p>
+            <b class="up-arrow"
+              ><img src="assets/icon-arrow-down.svg" alt=""
+            /></b>
+            <p class="faq__ans hide">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+            <p class="faq__hr-line"></p>
+          </li>
+
+          <li>
+            <p class="faq__qns">Do you provide additional support?</p>
+            <b class="up-arrow"
+              ><img src="assets/icon-arrow-down.svg" alt=""
+            /></b>
+            <p class="hide faq__ans">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+            <p class="faq__hr-line"></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      const lis = document.querySelectorAll("li");
+      const answers = document.querySelectorAll(".faq__ans");
+      for (const [index, li] of lis.entries()) {
+        li.addEventListener("click", () => {
+          li.classList.toggle("big__list-item");
+          const faqAnswer = answers[index];
+          faqAnswer.classList.toggle("hide");
+        });
+      }
+    </script>
+  </body>
+</html>
