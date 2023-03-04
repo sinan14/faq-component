@@ -173,6 +173,7 @@ li.big__list-item .faq__qns {
     background-repeat: no-repeat;
     background-position: 60% 10%;
     background-size: 60%;
+    position: relative;
   }
   .col-left .illustration__box-desktop {
     display: none;
@@ -180,8 +181,9 @@ li.big__list-item .faq__qns {
   .col-left .illustration__mobile {
     display: block;
     position: absolute;
-    top: -111%;
-    right: 18%;
+    top: 0;
+    right: 10%;
+    transform: translateY(-55%);
     width: 280px;
     height: 222px;
   }
