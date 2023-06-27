@@ -1,3 +1,5 @@
+# The page is live at
+https://front-end-mentor-works.github.io/faq-component/
 # Frontend Mentor - FAQ accordion card
 
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
